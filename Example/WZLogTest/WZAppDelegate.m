@@ -1,21 +1,20 @@
 //
 //  WZAppDelegate.m
-//  WZDebugLogTest
+//  WZLogTest
 //
-//  Created by wangzz on 14-3-30.
+//  Created by wangzz on 14-3-31.
 //  Copyright (c) 2014年 wangzz. All rights reserved.
 //
 
 #import "WZAppDelegate.h"
-#import "WZDebugLog.h"
+#import "WZLog.h"
 
 @implementation WZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //Init log system.
-    initWZDebugLog();
-    
+    // Override point for customization after application launch.
+    initWZLog();
     return YES;
 }
 							

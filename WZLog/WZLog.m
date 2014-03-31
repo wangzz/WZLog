@@ -1,24 +1,24 @@
 //
-//  WZDebugLog.m
-//  WZDebugLogTest
+//  WZLog.m
+//  WZLogTest
 //
 //  Created by wangzz on 14-3-30.
 //  Copyright (c) 2014年 wangzz. All rights reserved.
 //
 
-#import "WZDebugLog.h"
+#import "WZLog.h"
 #import "SafeArc.h"
 
 
-static WZDebugLogManager*   mLogManager = NULL;//单例的日志文件管理器
+static WZLogManager*   mLogManager = NULL;//单例的日志文件管理器
 static void handleRootException( NSException* exception );//系统崩溃回调函数
 
 /**
  *  初始化日志打印系统，必须调用的方法
  */
-void initWZDebugLog()
+void initWZLog()
 {
-    mLogManager = [WZDebugLogManager getInstance];
+    mLogManager = [WZLogManager getInstance];
     NSSetUncaughtExceptionHandler(handleRootException);//指定系统崩溃时回调
 }
 
@@ -38,8 +38,8 @@ void removeLogFile()
  *  @param format   日志内容，格式化字符串
  *  @param ...      格式化字符串的参数
  */
-void writeWZDebugLog( const char* function,        // 记录日志所在的函数名称
-                 WZDebugLogLevel level,            // 日志级别，Debug、Info、Warn、Error
+void writeWZLog( const char* function,        // 记录日志所在的函数名称
+                 WZLogLevel level,            // 日志级别，Debug、Info、Warn、Error
                  NSString* format,            // 日志内容，格式化字符串
                  ... )                        // 格式化字符串的参数
 {
@@ -59,13 +59,13 @@ void writeWZDebugLog( const char* function,        // 记录日志所在的函�
         str = @"";
     
     NSString    *levelString = @"";
-    if (level == WZDebugLogLevelDebug) {
+    if (level == WZLogLevelDebug) {
         levelString = @"Debug";
-    }else if (level == WZDebugLogLevelInfo){
+    }else if (level == WZLogLevelInfo){
         levelString = @"Info";
-    }else if (level == WZDebugLogLevelWarning){
+    }else if (level == WZLogLevelWarning){
         levelString = @"Warning";
-    }else if (level == WZDebugLogLevelError){
+    }else if (level == WZLogLevelError){
         levelString = @"Error";
     }
     
@@ -107,7 +107,7 @@ static void handleRootException( NSException* exception )
     NSString*   errorInfo = [NSString stringWithFormat:@"[ Uncaught Exception ]\r\nName: %@, Reason: %@\r\n[ Fe Symbols Start ]\r\n%@[ Fe Symbols End ]", name, reason, strSymbols];
     
     // 写日志，级别为ERROR
-    writeWZDebugLog( __FUNCTION__, WZDebugLogLevelError, errorInfo);
+    writeWZLog( __FUNCTION__, WZLogLevelError, errorInfo);
     SAFE_ARC_RELEASE(strSymbols);
     
     // 写一个文件，记录此时此刻发生了异常

@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		820DA08518E9268B00E3B166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820DA08418E9268B00E3B166 /* Foundation.framework */; };
+		820DA08718E9268B00E3B166 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820DA08618E9268B00E3B166 /* CoreGraphics.framework */; };
+		820DA08918E9268B00E3B166 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820DA08818E9268B00E3B166 /* UIKit.framework */; };
+		820DA08F18E9268B00E3B166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 820DA08D18E9268B00E3B166 /* InfoPlist.strings */; };
+		820DA09118E9268B00E3B166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA09018E9268B00E3B166 /* main.m */; };
+		820DA09518E9268B00E3B166 /* WZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA09418E9268B00E3B166 /* WZAppDelegate.m */; };
+		820DA09818E9268B00E3B166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820DA09618E9268B00E3B166 /* Main.storyboard */; };
+		820DA09B18E9268B00E3B166 /* WZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA09A18E9268B00E3B166 /* WZViewController.m */; };
+		820DA09D18E9268B00E3B166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820DA09C18E9268B00E3B166 /* Images.xcassets */; };
+		820DA0A418E9268B00E3B166 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820DA0A318E9268B00E3B166 /* XCTest.framework */; };
+		820DA0A518E9268B00E3B166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820DA08418E9268B00E3B166 /* Foundation.framework */; };
+		820DA0A618E9268B00E3B166 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820DA08818E9268B00E3B166 /* UIKit.framework */; };
+		820DA0AE18E9268B00E3B166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 820DA0AC18E9268B00E3B166 /* InfoPlist.strings */; };
+		820DA0B018E9268B00E3B166 /* WZLogTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA0AF18E9268B00E3B166 /* WZLogTestTests.m */; };
+		820DA0CA18E9276D00E3B166 /* configure.plist in Resources */ = {isa = PBXBuildFile; fileRef = 820DA0C418E9276D00E3B166 /* configure.plist */; };
+		820DA0CB18E9276D00E3B166 /* WZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA0C718E9276D00E3B166 /* WZLog.m */; };
+		820DA0CC18E9276D00E3B166 /* WZLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 820DA0C918E9276D00E3B166 /* WZLogManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		820DA0A718E9268B00E3B166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 820DA07918E9268B00E3B166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 820DA08018E9268B00E3B166;
+			remoteInfo = WZLogTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		820DA08118E9268B00E3B166 /* WZLogTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WZLogTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		820DA08418E9268B00E3B166 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		820DA08618E9268B00E3B166 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		820DA08818E9268B00E3B166 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		820DA08C18E9268B00E3B166 /* WZLogTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WZLogTest-Info.plist"; sourceTree = "<group>"; };
+		820DA08E18E9268B00E3B166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		820DA09018E9268B00E3B166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		820DA09218E9268B00E3B166 /* WZLogTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WZLogTest-Prefix.pch"; sourceTree = "<group>"; };
+		820DA09318E9268B00E3B166 /* WZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZAppDelegate.h; sourceTree = "<group>"; };
+		820DA09418E9268B00E3B166 /* WZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZAppDelegate.m; sourceTree = "<group>"; };
+		820DA09718E9268B00E3B166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		820DA09918E9268B00E3B166 /* WZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZViewController.h; sourceTree = "<group>"; };
+		820DA09A18E9268B00E3B166 /* WZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZViewController.m; sourceTree = "<group>"; };
+		820DA09C18E9268B00E3B166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		820DA0A218E9268B00E3B166 /* WZLogTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZLogTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		820DA0A318E9268B00E3B166 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		820DA0AB18E9268B00E3B166 /* WZLogTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WZLogTestTests-Info.plist"; sourceTree = "<group>"; };
+		820DA0AD18E9268B00E3B166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		820DA0AF18E9268B00E3B166 /* WZLogTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZLogTestTests.m; sourceTree = "<group>"; };
+		820DA0C418E9276D00E3B166 /* configure.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = configure.plist; sourceTree = "<group>"; };
+		820DA0C518E9276D00E3B166 /* SafeArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeArc.h; sourceTree = "<group>"; };
+		820DA0C618E9276D00E3B166 /* WZLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLog.h; sourceTree = "<group>"; };
+		820DA0C718E9276D00E3B166 /* WZLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZLog.m; sourceTree = "<group>"; };
+		820DA0C818E9276D00E3B166 /* WZLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLogManager.h; sourceTree = "<group>"; };
+		820DA0C918E9276D00E3B166 /* WZLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZLogManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		820DA07E18E9268B00E3B166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820DA08718E9268B00E3B166 /* CoreGraphics.framework in Frameworks */,
+				820DA08918E9268B00E3B166 /* UIKit.framework in Frameworks */,
+				820DA08518E9268B00E3B166 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820DA09F18E9268B00E3B166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820DA0A418E9268B00E3B166 /* XCTest.framework in Frameworks */,
+				820DA0A618E9268B00E3B166 /* UIKit.framework in Frameworks */,
+				820DA0A518E9268B00E3B166 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		820DA07818E9268B00E3B166 = {
+			isa = PBXGroup;
+			children = (
+				820DA08A18E9268B00E3B166 /* WZLogTest */,
+				820DA0A918E9268B00E3B166 /* WZLogTestTests */,
+				820DA08318E9268B00E3B166 /* Frameworks */,
+				820DA08218E9268B00E3B166 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		820DA08218E9268B00E3B166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				820DA08118E9268B00E3B166 /* WZLogTest.app */,
+				820DA0A218E9268B00E3B166 /* WZLogTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		820DA08318E9268B00E3B166 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				820DA08418E9268B00E3B166 /* Foundation.framework */,
+				820DA08618E9268B00E3B166 /* CoreGraphics.framework */,
+				820DA08818E9268B00E3B166 /* UIKit.framework */,
+				820DA0A318E9268B00E3B166 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		820DA08A18E9268B00E3B166 /* WZLogTest */ = {
+			isa = PBXGroup;
+			children = (
+				820DA0C318E9276D00E3B166 /* WZLog */,
+				820DA09318E9268B00E3B166 /* WZAppDelegate.h */,
+				820DA09418E9268B00E3B166 /* WZAppDelegate.m */,
+				820DA09618E9268B00E3B166 /* Main.storyboard */,
+				820DA09918E9268B00E3B166 /* WZViewController.h */,
+				820DA09A18E9268B00E3B166 /* WZViewController.m */,
+				820DA09C18E9268B00E3B166 /* Images.xcassets */,
+				820DA08B18E9268B00E3B166 /* Supporting Files */,
+			);
+			path = WZLogTest;
+			sourceTree = "<group>";
+		};
+		820DA08B18E9268B00E3B166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				820DA08C18E9268B00E3B166 /* WZLogTest-Info.plist */,
+				820DA08D18E9268B00E3B166 /* InfoPlist.strings */,
+				820DA09018E9268B00E3B166 /* main.m */,
+				820DA09218E9268B00E3B166 /* WZLogTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		820DA0A918E9268B00E3B166 /* WZLogTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				820DA0AF18E9268B00E3B166 /* WZLogTestTests.m */,
+				820DA0AA18E9268B00E3B166 /* Supporting Files */,
+			);
+			path = WZLogTestTests;
+			sourceTree = "<group>";
+		};
+		820DA0AA18E9268B00E3B166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				820DA0AB18E9268B00E3B166 /* WZLogTestTests-Info.plist */,
+				820DA0AC18E9268B00E3B166 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		820DA0C318E9276D00E3B166 /* WZLog */ = {
+			isa = PBXGroup;
+			children = (
+				820DA0C418E9276D00E3B166 /* configure.plist */,
+				820DA0C518E9276D00E3B166 /* SafeArc.h */,
+				820DA0C618E9276D00E3B166 /* WZLog.h */,
+				820DA0C718E9276D00E3B166 /* WZLog.m */,
+				820DA0C818E9276D00E3B166 /* WZLogManager.h */,
+				820DA0C918E9276D00E3B166 /* WZLogManager.m */,
+			);
+			name = WZLog;
+			path = ../../WZLog;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		820DA08018E9268B00E3B166 /* WZLogTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 820DA0B318E9268B00E3B166 /* Build configuration list for PBXNativeTarget "WZLogTest" */;
+			buildPhases = (
+				820DA07D18E9268B00E3B166 /* Sources */,
+				820DA07E18E9268B00E3B166 /* Frameworks */,
+				820DA07F18E9268B00E3B166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WZLogTest;
+			productName = WZLogTest;
+			productReference = 820DA08118E9268B00E3B166 /* WZLogTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		820DA0A118E9268B00E3B166 /* WZLogTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 820DA0B618E9268B00E3B166 /* Build configuration list for PBXNativeTarget "WZLogTestTests" */;
+			buildPhases = (
+				820DA09E18E9268B00E3B166 /* Sources */,
+				820DA09F18E9268B00E3B166 /* Frameworks */,
+				820DA0A018E9268B00E3B166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				820DA0A818E9268B00E3B166 /* PBXTargetDependency */,
+			);
+			name = WZLogTestTests;
+			productName = WZLogTestTests;
+			productReference = 820DA0A218E9268B00E3B166 /* WZLogTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		820DA07918E9268B00E3B166 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WZ;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = wangzz;
+				TargetAttributes = {
+					820DA0A118E9268B00E3B166 = {
+						TestTargetID = 820DA08018E9268B00E3B166;
+					};
+				};
+			};
+			buildConfigurationList = 820DA07C18E9268B00E3B166 /* Build configuration list for PBXProject "WZLogTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 820DA07818E9268B00E3B166;
+			productRefGroup = 820DA08218E9268B00E3B166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				820DA08018E9268B00E3B166 /* WZLogTest */,
+				820DA0A118E9268B00E3B166 /* WZLogTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		820DA07F18E9268B00E3B166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820DA09D18E9268B00E3B166 /* Images.xcassets in Resources */,
+				820DA08F18E9268B00E3B166 /* InfoPlist.strings in Resources */,
+				820DA09818E9268B00E3B166 /* Main.storyboard in Resources */,
+				820DA0CA18E9276D00E3B166 /* configure.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820DA0A018E9268B00E3B166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820DA0AE18E9268B00E3B166 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		820DA07D18E9268B00E3B166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820DA09118E9268B00E3B166 /* main.m in Sources */,
+				820DA0CB18E9276D00E3B166 /* WZLog.m in Sources */,
+				820DA0CC18E9276D00E3B166 /* WZLogManager.m in Sources */,
+				820DA09518E9268B00E3B166 /* WZAppDelegate.m in Sources */,
+				820DA09B18E9268B00E3B166 /* WZViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820DA09E18E9268B00E3B166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820DA0B018E9268B00E3B166 /* WZLogTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		820DA0A818E9268B00E3B166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 820DA08018E9268B00E3B166 /* WZLogTest */;
+			targetProxy = 820DA0A718E9268B00E3B166 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		820DA08D18E9268B00E3B166 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820DA08E18E9268B00E3B166 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		820DA09618E9268B00E3B166 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820DA09718E9268B00E3B166 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		820DA0AC18E9268B00E3B166 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				820DA0AD18E9268B00E3B166 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		820DA0B118E9268B00E3B166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		820DA0B218E9268B00E3B166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		820DA0B418E9268B00E3B166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WZLogTest/WZLogTest-Prefix.pch";
+				INFOPLIST_FILE = "WZLogTest/WZLogTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		820DA0B518E9268B00E3B166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WZLogTest/WZLogTest-Prefix.pch";
+				INFOPLIST_FILE = "WZLogTest/WZLogTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		820DA0B718E9268B00E3B166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WZLogTest.app/WZLogTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WZLogTest/WZLogTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WZLogTestTests/WZLogTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		820DA0B818E9268B00E3B166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WZLogTest.app/WZLogTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WZLogTest/WZLogTest-Prefix.pch";
+				INFOPLIST_FILE = "WZLogTestTests/WZLogTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		820DA07C18E9268B00E3B166 /* Build configuration list for PBXProject "WZLogTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820DA0B118E9268B00E3B166 /* Debug */,
+				820DA0B218E9268B00E3B166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		820DA0B318E9268B00E3B166 /* Build configuration list for PBXNativeTarget "WZLogTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820DA0B418E9268B00E3B166 /* Debug */,
+				820DA0B518E9268B00E3B166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		820DA0B618E9268B00E3B166 /* Build configuration list for PBXNativeTarget "WZLogTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820DA0B718E9268B00E3B166 /* Debug */,
+				820DA0B818E9268B00E3B166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 820DA07918E9268B00E3B166 /* Project object */;
+}

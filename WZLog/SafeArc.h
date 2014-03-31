@@ -1,13 +1,13 @@
 //
 //  SafeArc.h
-//  WZDebugLogTest
+//  WZLogTest
 //
 //  Created by wangzz on 14-3-30.
 //  Copyright (c) 2014年 wangzz. All rights reserved.
 //
 
-#ifndef WZDebugLogTest_SafeArc_h
-#define WZDebugLogTest_SafeArc_h
+#ifndef WZLogTest_SafeArc_h
+#define WZLogTest_SafeArc_h
 
 #if !defined(__clang__) || __clang_major__ < 3
 #ifndef __bridge

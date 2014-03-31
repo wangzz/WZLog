@@ -1,18 +1,18 @@
 //
-//  WZDebugLogTestTests.m
-//  WZDebugLogTestTests
+//  WZLogTestTests.m
+//  WZLogTestTests
 //
-//  Created by wangzz on 14-3-30.
+//  Created by wangzz on 14-3-31.
 //  Copyright (c) 2014年 wangzz. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface WZDebugLogTestTests : XCTestCase
+@interface WZLogTestTests : XCTestCase
 
 @end
 
-@implementation WZDebugLogTestTests
+@implementation WZLogTestTests
 
 - (void)setUp
 {

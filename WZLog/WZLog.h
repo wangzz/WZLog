@@ -1,13 +1,13 @@
 //
-//  WZDebugLog.h
-//  WZDebugLogTest
+//  WZLog.h
+//  WZLogTest
 //
 //  Created by wangzz on 14-3-30.
 //  Copyright (c) 2014年 wangzz. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "WZDebugLogManager.h"
+#import "WZLogManager.h"
 
 
 /**
@@ -30,22 +30,22 @@
 /**
  *  打印debug级别的日志
  */
-#define WZLogDebug(format,...)       writeWZDebugLog(__FUNCTION__,WZDebugLogLevelDebug,format,##__VA_ARGS__)
+#define WZLogDebug(format,...)       writeWZLog(__FUNCTION__,WZLogLevelDebug,format,##__VA_ARGS__)
 
 /**
  *  打印info级别的日志
  */
-#define WZLogInfo(format,...)        writeWZDebugLog(__FUNCTION__,WZDebugLogLevelInfo,format,##__VA_ARGS__)
+#define WZLogInfo(format,...)        writeWZLog(__FUNCTION__,WZLogLevelInfo,format,##__VA_ARGS__)
 
 /**
  *  打印warn级别的日志
  */
-#define WZLogWarn(format,...)        writeWZDebugLog(__FUNCTION__,WZDebugLogLevelWarning,format,##__VA_ARGS__)
+#define WZLogWarn(format,...)        writeWZLog(__FUNCTION__,WZLogLevelWarning,format,##__VA_ARGS__)
 
 /**
  *  打印error级别的日志
  */
-#define WZLogError(format,...)       writeWZDebugLog(__FUNCTION__,WZDebugLogLevelError,format,##__VA_ARGS__)
+#define WZLogError(format,...)       writeWZLog(__FUNCTION__,WZLogLevelError,format,##__VA_ARGS__)
 #else
 #define WZLogDebug(format,...)      NSLog(format, ##__VA_ARGS__)
 #define WZLogInfo(format,...)       NSLog(format, ##__VA_ARGS__)
@@ -63,7 +63,7 @@
 /**
  *  初始化日志打印系统，必须在初始化log系统的时候调用
  */
-void initWZDebugLog();
+void initWZLog();
 
 /**
  *  删除日志文件
@@ -79,4 +79,4 @@ void removeLogFile();
  *  @param format   日志内容，格式化字符串
  *  @param ...      格式化字符串的参数
  */
-void writeWZDebugLog( const char* function, WZDebugLogLevel level, NSString* format, ... );
+void writeWZLog( const char* function, WZLogLevel level, NSString* format, ... );

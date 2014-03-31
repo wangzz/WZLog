@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WZDebugLogTest.xcscheme</key>
+		<key>WZLogTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>820DA02B18E851A400E3B166</key>
+		<key>820DA08018E9268B00E3B166</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>820DA04C18E851A500E3B166</key>
+		<key>820DA0A118E9268B00E3B166</key>
 		<dict>
 			<key>primary</key>
 			<true/>

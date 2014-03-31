@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "820DA02B18E851A400E3B166"
-               BuildableName = "WZDebugLogTest.app"
-               BlueprintName = "WZDebugLogTest"
-               ReferencedContainer = "container:WZDebugLogTest.xcodeproj">
+               BlueprintIdentifier = "820DA08018E9268B00E3B166"
+               BuildableName = "WZLogTest.app"
+               BlueprintName = "WZLogTest"
+               ReferencedContainer = "container:WZLogTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "820DA04C18E851A500E3B166"
-               BuildableName = "WZDebugLogTestTests.xctest"
-               BlueprintName = "WZDebugLogTestTests"
-               ReferencedContainer = "container:WZDebugLogTest.xcodeproj">
+               BlueprintIdentifier = "820DA0A118E9268B00E3B166"
+               BuildableName = "WZLogTestTests.xctest"
+               BlueprintName = "WZLogTestTests"
+               ReferencedContainer = "container:WZLogTest.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "820DA02B18E851A400E3B166"
-            BuildableName = "WZDebugLogTest.app"
-            BlueprintName = "WZDebugLogTest"
-            ReferencedContainer = "container:WZDebugLogTest.xcodeproj">
+            BlueprintIdentifier = "820DA08018E9268B00E3B166"
+            BuildableName = "WZLogTest.app"
+            BlueprintName = "WZLogTest"
+            ReferencedContainer = "container:WZLogTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "820DA02B18E851A400E3B166"
-            BuildableName = "WZDebugLogTest.app"
-            BlueprintName = "WZDebugLogTest"
-            ReferencedContainer = "container:WZDebugLogTest.xcodeproj">
+            BlueprintIdentifier = "820DA08018E9268B00E3B166"
+            BuildableName = "WZLogTest.app"
+            BlueprintName = "WZLogTest"
+            ReferencedContainer = "container:WZLogTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "820DA02B18E851A400E3B166"
-            BuildableName = "WZDebugLogTest.app"
-            BlueprintName = "WZDebugLogTest"
-            ReferencedContainer = "container:WZDebugLogTest.xcodeproj">
+            BlueprintIdentifier = "820DA08018E9268B00E3B166"
+            BuildableName = "WZLogTest.app"
+            BlueprintName = "WZLogTest"
+            ReferencedContainer = "container:WZLogTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

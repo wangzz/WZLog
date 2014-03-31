@@ -1,12 +1,12 @@
 //
-//  WZDebugLogManager.m
-//  WZDebugLogTest
+//  WZLogManager.m
+//  WZLogTest
 //
 //  Created by wangzz on 14-3-30.
 //  Copyright (c) 2014年 wangzz. All rights reserved.
 //
 
-#import "WZDebugLogManager.h"
+#import "WZLogManager.h"
 #import "SafeArc.h"
 
 //应用程序程序包路径
@@ -16,18 +16,18 @@
 #define LOGFILE_PATH    NSTemporaryDirectory()
 
 
-@implementation WZDebugLogManager
+@implementation WZLogManager
 @synthesize mLogLevel = _logLevel;
 @synthesize mLogType = _logType;
 @synthesize mCurrentLogFileName = _currentLogFileName;
 @synthesize mCurrentLogFilePath = _currentLogFilePath;
 
 //必须用单例模式
-static WZDebugLogManager*  uniqueInstance = NULL;
-+ (WZDebugLogManager *)getInstance
+static WZLogManager*  uniqueInstance = NULL;
++ (WZLogManager *)getInstance
 {
     if (NULL == uniqueInstance) {
-        @synchronized([WZDebugLogManager class])
+        @synchronized([WZLogManager class])
         {
             if (NULL == uniqueInstance) {
                 uniqueInstance = [[self alloc]init];
@@ -124,15 +124,15 @@ static WZDebugLogManager*  uniqueInstance = NULL;
     }
     
     switch (_logType) {
-        case WZDebugLogTypeNull://不打印日志
+        case WZLogTypeNull://不打印日志
             break;
-        case WZDebugLogTypeConsole://打印日志到控制台
+        case WZLogTypeConsole://打印日志到控制台
             [self logToConsole:logString];
             break;
-        case WZDebugLogTypeFile://打印文件到文件
+        case WZLogTypeFile://打印文件到文件
             [self logToFile:logString];
             break;
-        case WZDebugLogTypeConsoleAndFile://打印日志到控制台和文件
+        case WZLogTypeConsoleAndFile://打印日志到控制台和文件
             [self logToConsole:logString];
             [self logToFile:logString];
             break;

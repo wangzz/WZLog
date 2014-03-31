@@ -1,8 +1,8 @@
 //
 //  main.m
-//  WZDebugLogTest
+//  WZLogTest
 //
-//  Created by wangzz on 14-3-30.
+//  Created by wangzz on 14-3-31.
 //  Copyright (c) 2014年 wangzz. All rights reserved.
 //
 
