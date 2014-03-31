@@ -195,7 +195,7 @@ pod 'WZLog'
 目前崩溃日志是写在文件中的，而且只能记录最近的一条日志，后续可以考虑记录多条崩溃日志，并且保存在网络上
 
 ###联系我
-大家有好的想法可以通过[邮件]<wzzvictory_tjsd@163.com>或者[@新浪微博]<http://weibo.com/foogry>联系我。
+大家有好的想法可以通过[邮件](wzzvictory_tjsd@163.com)或者[@新浪微博]<http://weibo.com/foogry>联系我。
 
 ###遵守协议
 `WZLog`遵循`MTK`协议，详情见`LICENSE`文件。
