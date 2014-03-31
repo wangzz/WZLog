@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WZLog"
-  s.version          = "1.1.0"
+  s.version          = "2.0.0"
   s.summary          = "A log system for iOS named WZLog."
   s.description      = <<-DESC
                        WZLog is a iOS log system,it can output log to both console and file.It is usefull for debug.
@@ -25,5 +25,4 @@ Pod::Spec.new do |s|
   # s.osx.exclude_files = 'Classes/ios'
   # s.public_header_files = 'Classes/**/*.h'
   s.frameworks = 'Foundation', 'UIKit'
-
 end
