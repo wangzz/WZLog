@@ -21,29 +21,29 @@
 
 typedef enum
 {
-    WZLogLevelDebug = 0,
-    WZLogLevelInfo,
-    WZLogLevelWarning,
-    WZLogLevelError
+    WZLogLevelDebug = 0,        //打印debug级别日志
+    WZLogLevelInfo,             //打印info级别日志
+    WZLogLevelWarning,          //打印warning级别日志
+    WZLogLevelError             //打印error级别日志
 }WZLogLevel;
 
 typedef enum
 {
-    WZLogTypeNull = 0,//不打印日志
-    WZLogTypeConsole,//打印日志到控制台
-    WZLogTypeFile,//打印日志到文件
-    WZLogTypeConsoleAndFile//同时打印日志到文件和控制台
+    WZLogTypeNull = 0,          //不打印日志
+    WZLogTypeConsole,           //打印日志到控制台
+    WZLogTypeFile,              //打印日志到文件
+    WZLogTypeConsoleAndFile     //同时打印日志到文件和控制台
 }WZLogType;
 
 @interface WZLogManager : NSObject
 {
     NSMutableArray*     _queue;
     NSCondition*        _signal;
-    WZLogLevel         _logLevel;//日志打印级别
-    WZLogType          _logType;//日志打印位置
-    NSInteger           _maxFileSize;//日志文件最大值，以KB为单位
-    NSString*           _currentLogFileName;//日志的保存文件
-    NSString*           _currentLogFilePath;//日志的保存路径
+    WZLogLevel          _logLevel;                  //日志打印级别
+    WZLogType           _logType;                   //日志打印位置
+    NSInteger           _maxFileSize;               //日志文件最大值，以KB为单位
+    NSString*           _currentLogFileName;        //日志的保存文件
+    NSString*           _currentLogFilePath;        //日志的保存路径
 }
 
 @property(nonatomic,readonly)WZLogLevel         mLogLevel;
