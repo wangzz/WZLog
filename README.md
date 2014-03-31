@@ -14,7 +14,7 @@ typedef enum
 }WZLogLevel;
 ```
 
-目前有**WZLogLevelDebug**、**WZLogLevelInfo**、**WZLogLevelWarning**、**WZLogLevelError**四种级别的日志，它们的日志重要性等级依次递升。你可以根据项目的实际需要，在不同的位置使用不同等级的日志。
+根据大部分的用户需要，目前总共划分了'WZLogLevelDebug'、'WZLogLevelInfo'、'WZLogLevelWarning'、'WZLogLevelError'四种级别的日志，它们的日志重要性等级依次递升。你可以根据项目的实际需要，在不同的位置使用不同等级的日志。
 
 2.
 
@@ -25,7 +25,7 @@ typedef enum
 
 
 ###ARC支持
-**WZLog**同时支持ARC和非ARC
+'WZLog'同时支持ARC和非ARC
 
 
 ###使用方式
@@ -33,13 +33,13 @@ typedef enum
 
 
 ###兼容性
-本项目可用在**iOS4.3**及以上版本的系统中
+本项目可用在'iOS4.3'及以上版本的系统中
 
 ###需要完善的地方
 1.崩溃检测
-目前崩溃检测类型有限，只能检测**EXC_BAD_ACCESS**和其它少数的几种类型的崩溃
+目前崩溃检测类型有限，只能检测'EXC_BAD_ACCESS'和其它少数的几种类型的崩溃
 2.崩溃日志输出
 目前崩溃日志是写在文件中的，后续可以考虑保存在网络上
 
 ###遵守协议
-**WZLog**遵循MTK协议，详情见**LICENSE**文件。
+'WZLog'遵循MTK协议，详情见'LICENSE'文件。
