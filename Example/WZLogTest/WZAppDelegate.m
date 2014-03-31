@@ -13,8 +13,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // 初始化日志系统.
     initWZLog();
+    
     return YES;
 }
 							

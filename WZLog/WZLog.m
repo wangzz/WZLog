@@ -69,7 +69,7 @@ void writeWZLog( const char* function,        // 记录日志所在的函数名�
         levelString = @"Error";
     }
     
-#ifdef WZLogStyleOneLine
+#ifndef WZLogStyleDic
     NSDate* date = [NSDate date];
     NSDateFormatter*    dateFormatter = [[NSDateFormatter alloc] init];
     SAFE_ARC_AUTORELEASE(dateFormatter);
