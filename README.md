@@ -32,7 +32,7 @@ typedef enum
 }WZLogType;
 ```
 根据不同的调试需求，设定了四种日志输出方式：`WZLogTypeNull`、`WZLogTypeConsole`、`WZLogTypeFile`、`WZLogTypeConsoleAndFile`
-分别表示
+分别表示:
 * 不输出任何日志
 这可以用于软件的release版本，减少因为log输出造成的系统性能损失；
 * 输出日志到控制台
@@ -48,10 +48,15 @@ typedef enum
 配置文件在项目中的目录为`WZLog->configure.plist`。
 这是一个plist文件，共有以下几个设置项：
 * logType
+
 取值类型：int值
+
 取值范围：[0-3]
+
 作用：对应`WZLogType`定义，用于设置日志输出方式
+
 默认值：3，即同时输出日志到文件和控制台
+
 * logLevel
 取值类型：int值
 取值范围：[0-3]
@@ -77,7 +82,7 @@ typedef enum
 ```objective-c
 [2014-03-31 17:48:04][Error][-[WZViewController onButtonAction:]]It is a debug log!
 ```
-其含义依次为：[当前时间][日志级别][日志所在方法][日志实际打印内容]
+其含义依次为：[`当前时间`][`日志级别`][`日志所在方法`][`日志实际打印内容`]
 
 * 其它输出格式
 ```objective-c
@@ -102,26 +107,28 @@ typedef enum
     Message = "It is a debug log!";
 }
 ```
-如果想以第二种格式输出日志，可以定义宏：'#define WZLogStyleDic'
+如果想以第二种格式输出日志，可以定义宏：`#define WZLogStyleDic`
 
 ###ARC支持
-'WZLog'同时支持ARC和非ARC
+`WZLog`同时支持`ARC`和`非ARC`
 
 
 ###系统要求
 本项目可用在`iOS4.3`及以上版本的系统中
 
 ###CocoaPods
-通过CocoaPods安装该项目，可以在你的Podfile文件中加入以下内容：
+通过CocoaPods安装该项目，可以在你的`Podfile`文件中加入以下内容：
  ```
 pod 'WZLog'
 ```
 
 ###日志系统使用前需要做的
 1.将项目添加到你的工程中
-可以通过CocoaPods或者直接将本仓库中的'WZLog'文件夹下的6个文件全部添加到你的工程中
+可以通过CocoaPods或者直接将本仓库中的`WZLog`文件夹下的6个文件全部添加到你的工程中
+
 2.头文件引入
-在你工程的'.pch'文件中引入'WZLog.h'头文件
+在你工程的`.pch`文件中引入`WZLog.h`头文件
+
 3.初始化日志系统
 在软件启动的时候初始化日志系统，推荐初始化方式如下：
 ```objective-c
@@ -155,7 +162,7 @@ pod 'WZLog'
 * 默认名称:
 `WZLog.txt`
 * 默认输出路径：
-软件沙盒的tmp目录下，比如`59E55879-58C3-4CD4-96AA-B1EBBC78A621/tmp/WZLog.txt`
+软件沙盒的`tmp`目录下，比如`59E55879-58C3-4CD4-96AA-B1EBBC78A621/tmp/WZLog.txt`
 * 最大大小：
 为配置文件中的设定值，当超过该值时，会清除之前的日志文件，重新开始写
 
@@ -170,11 +177,12 @@ pod 'WZLog'
 ###需要完善的地方
 1.崩溃检测
 目前崩溃检测类型有限，只能检测`EXC_BAD_ACCESS`和其它少数的几种类型的崩溃
+
 2.崩溃日志输出
 目前崩溃日志是写在文件中的，而且只能记录最近的一条日志，后续可以考虑记录多条崩溃日志，并且保存在网络上
 
 ###联系我
-大家有好的想法可以通过[邮件]<wzzvictory_tjsd@163.com>或者[新浪微博]<http://weibo.com/foogry>联系我。
+大家有好的想法可以通过[邮件]<wzzvictory_tjsd@163.com>或者[@新浪微博]<http://weibo.com/foogry>联系我。
 
 ###遵守协议
 `WZLog`遵循`MTK`协议，详情见`LICENSE`文件。
