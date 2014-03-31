@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logType</key>
+	<string>3</string>
+	<key>logLevel</key>
+	<string>0</string>
+	<key>maxFileSize</key>
+	<string>10000</string>
+	<key>logFileName</key>
+	<string>WZLog.txt</string>
+</dict>
+</plist>
