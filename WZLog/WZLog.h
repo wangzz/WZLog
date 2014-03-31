@@ -10,6 +10,8 @@
 #import "WZLogManager.h"
 
 
+#ifdef __OBJC__
+
 /**
  *  定义该宏，每条日志会以每条一行的形式打印或写入文件
  *  不定义该宏，每条日志会以字典的形式打印或写入文件
@@ -80,3 +82,6 @@ void removeLogFile();
  *  @param ...      格式化字符串的参数
  */
 void writeWZLog( const char* function, WZLogLevel level, NSString* format, ... );
+
+
+#endif
