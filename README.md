@@ -122,6 +122,12 @@ typedef enum
 ```
 如果想以第二种格式输出日志，可以定义宏：`#define WZLogStyleDic`
 
+6.删除日志文件
+可以通过以下方式删除日志文件：
+```objective-c
+WZLogFileRemove()
+```
+
 ###ARC支持
 `WZLog`同时支持`ARC`和`非ARC`
 
